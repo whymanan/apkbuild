@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fab_coordinator_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".FASTag.FastTagActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".FASTag.FastTagActivity">
+
+        <ImageButton
+            android:id="@+id/backbuttonf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_backbutton"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView9"
+            android:text="Provider"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_sp_f"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_background">
+
+                <Spinner
+                    android:id="@+id/fasttag_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dropdown"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="20dp"
+                    android:dropDownVerticalOffset="60dp"
+                    android:paddingRight="20dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_confirmft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_sp_f"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/editTextVehicalNof"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/vehical_no"
+                    android:paddingLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/loading"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:background="@drawable/spinner_background"/>
+
+                <Button
+                    android:id="@+id/btn_fasttag_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/editTextCusmNo"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:background="@color/appPrimaryColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPayft"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/linear_confirmft"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_recipt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RECIPT"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentStart="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_txt_title"
+                        android:layout_below="@+id/txt_recipt_title"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtArrow"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:text="Qty"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            />
+                        <TextView
+                            android:id="@+id/txt_decs"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/txtArrow"
+                            android:text="Description"
+                            android:textColor="@color/black"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+
+                            />
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/txt_decs"
+                            android:text="Amount"
+                            android:textColor="@color/black"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_txt_data1"
+                        android:layout_below="@+id/relative_txt_title"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/txtQty1"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:text="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            />
+                        <TextView
+                            android:id="@+id/txt_decs1"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:layout_toRightOf="@id/txtQty1"
+                            android:text="item 1"
+                            android:textColor="@color/black"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+
+                            />
+                        <TextView
+                            android:id="@+id/txt_amt1"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:layout_toRightOf="@id/txt_decs1"
+                            android:text="100"
+                            android:textColor="@color/black"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_txt_data2"
+                        android:layout_below="@+id/relative_txt_data1"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/txtQty2"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:text="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            />
+                        <TextView
+                            android:id="@+id/txt_decs2"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:layout_toRightOf="@id/txtQty2"
+                            android:text="item 2"
+                            android:textColor="@color/black"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+
+                            />
+                        <TextView
+                            android:id="@+id/txt_amt2"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:layout_toRightOf="@id/txt_decs2"
+                            android:text="100"
+                            android:textColor="@color/black"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center"
+                            />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relative_txt_total_data"
+                        android:layout_below="@+id/relative_txt_data2"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/txt_total"
+                            android:textSize="16sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:text="Total"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_decst"
+                            android:textSize="16sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:layout_toRightOf="@id/txt_total"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_amt_total"
+                            android:textSize="16sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:layout_toRightOf="@id/txt_decst"
+                            android:text="200"
+                            android:textColor="@color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:textStyle="bold"
+
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btn_fast_tag_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/relative_txt_total_data"
+                        android:background="@color/appPrimaryColor"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

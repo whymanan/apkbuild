@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Next Money</string>
+
+    <string name="course_name">Course Name</string>
+    <string name="course_rating">Rating</string>
+    <string name="biller_name_title">Billers in Maharashtra</string>
+    <string name="hint_cust_id">Enter Consumer Number</string>
+    <string name="cust_no.">Consumer Number</string>
+    <string name="consu_no">Consumer No.</string>
+    <string name="email">Email</string>
+    <string name="vehical_no">Vehical No</string>
+    <string name="withdraw"><u>Withdrawal</u></string>
+    <string name="getHistory">Get History</string>
+    <string name="go">Go</string>
+    <string name="amount">Amount</string>
+    <string name="remark">Remark</string>
+    <string name="us">\u20B9</string>
+
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+    <string name="email_error">Please enter your email address</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="hint_mob_email">Mobile No. Or Email</string>
+    <string name="send_otp">Send Otp</string>
+    <string name="procced">Proceed</string>
+    <string name="new_pass">New Password</string>
+    <string name="e_new_pass">Enter New Password</string>
+    <string name="e_con_pass">Enter Confirm Password</string>
+
+
+    <string name="trans_id">Transaction ID</string>
+    <string name="bussi_info">Bussiness Information</string>
+    <string name="shop_add">Shop Address</string>
+    <string name="bank_acc_det">Bank Account Details</string>
+    <string name="save_info">Save Information</string>
+    <string name="upload_doc">Upload Documents</string>
+    <string name="profile">Profile</string>
+    <string name="upload">Upload</string>
+    <string name="adhar_frnt">Aadhar Front</string>
+    <string name="adhar_bck">Aadhar Back</string>
+    <string name="pan">Pan</string>
+    <string name="pass_bk_photo">Passbook Photo</string>
+    <string name="s_comp_type">Select Company Type</string>
+    <string name="name_of_per">Name of Person</string>
+    <string name="dob">Date of Birth</string>
+    <string name="pan_no">Pan No.</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="f_h_name">Father/Husband Name</string>
+    <string name="designation">Designation</string>
+    <string name="adhar_no">Adhar Number</string>
+    <string name="addr">Address</string>
+    <string name="direct">Director1</string>
+    <string name="adhar_f">Adhar front</string>
+
+    <string name="adhar_b">Adhar Back</string>
+    <string name="din">DIN</string>
+    <string name="send_file">Send File</string>
+    <string name="member_id">Member Id</string>
+    <string name="accept_date">Accepted Date</string>
+    <string name="refence_no">Refernce Number</string>
+    <string name="chose_file">Choose a file</string>
+
+
+    <array name="electricity_bill">
+        <item name="0">Adani Electricity</item>
+        <item name="1">Ajmer Vidyut Vitran Nigam Limited</item>
+        <item name="2">APDCL (Non-RAPDR) - ASSAM</item>
+        <item name="3">APDCL (RAPDR) - ASSAM</item>
+        <item>APEPDCL - Andhra Pradesh</item>
+        <item>Bangalore Electricity supply company Ltd</item>
+        <item>BEST Undertaking</item>
+        <item>Bikaner Electricity Supply Limited</item>
+        <item>BSES Rajdhani Power Limited</item>
+        <item>BSES Yamuna Power Limited</item>
+        <item>Calcutta Electric Supply Corporation Limited</item>
+        <item>CESCOM - KARNATAKA","Chhattisgarh State Power Distribution Company Ltd</item>
+        <item>Dakshin Gujarat Vij Company Limited</item>
+        <item>Dakshin Haryana Bijli Vitran Nigam</item>
+        <item>Daman And Diu Electricity</item>
+        <item>DNH Power Distribution Company Limited</item>
+        <item>Uttar Pradesh Power Corporation Ltd (RURAL)</item>
+    </array>
+
+
+    <array name="electricity_bill_value">
+        <item>ADEM</item>
+        <item>AVVR</item>
+        <item>APDC</item>
+        <item>APDR</item>
+        <item>APEP</item>
+        <item>APSP</item>
+        <item>BEST Undertaking</item>
+        <item>Bikaner Electricity Supply Limited</item>
+        <item>BSES Rajdhani Power Limited</item>
+        <item>BSES Yamuna Power Limited</item>
+        <item>Calcutta Electric Supply Corporation Limited</item>
+        <item>CESCOM - KARNATAKA","Chhattisgarh State Power Distribution Company Ltd</item>
+        <item>Dakshin Gujarat Vij Company Limited</item>
+        <item>Dakshin Haryana Bijli Vitran Nigam</item>
+        <item>Daman And Diu Electricity</item>
+        <item>DNH Power Distribution Company Limited</item>
+        <item>Uttar Pradesh Power Corporation Ltd (RURAL)</item>
+    </array>
+
+    <string name="add_field">Add Field</string>
+    <string name="submit">submit</string>
+    <string name="s_return_type">Select Return Type</string>
+    <string name="bank_stmt">Bank Statement</string>
+    <string name="buss_add">Buiseness Address  <font fgcolor="red">*</font></string>
+    <string name="district">District <font fgcolor="red">*</font></string>
+    <string name="state">State <font fgcolor="red">*</font></string>
+    <string name="comp_name_add">4 names options to apply for company name <font fgcolor="red">*</font></string>
+    <string name="ele_bill">Electricity Bill <font fgcolor="red">*</font></string>
+    <string name="rent_agree">Rent Agreement <font fgcolor="red">*</font></string>
+    <string name="coi">Certificate Of Incorporation  <font fgcolor="red">*</font></string>
+    <string name="photo">Photo <font fgcolor="red">*</font></string>
+    <string name="adhr_f_s">Adhar front  <font fgcolor="red">*</font></string>
+    <string name="adhar_b_s">Aadhar Back  <font fgcolor="red">*</font></string>
+    <string name="pan_s">Pan <font fgcolor="red">*</font></string>
+    <string name="bank_stmt_s">Bank Statement <font fgcolor="red">*</font></string>
+    <string name="firm_name">Firm Name  <font fgcolor="red">*</font></string>
+    <string name="nob_5">Nature Of Business(5 Points) <font fgcolor="red">*</font></string>
+    <string name="comp_name">4 names options to apply for company name <font fgcolor="red">*</font></string>
+    <string name="add_bal">Add Balance</string>
+    <string name="pur_coupon">Purchase Coupon</string>
+    <string name="vle_id">VLE ID</string>
+    <string name="coupn_qty">Coupon Quantity</string>
+    <string name="total_amt">Total Amount</string>
+    <string name="purchse_now">Purchase Now</string>
+    <string name="add_vle">Add VLE</string>
+    <string name="vle_name">VLE Name</string>
+    <string name="shop_name">Shop name</string>
+    <string name="location">Location</string>
+    <string name="pin_no">Pin Number</string>
+    <string name="user_id">User Id</string>
+    <string name="add_balance"><u>Add Balance</u></string>
+    <string name="reset">Reset</string>
+
+    <string name="hints"><![CDATA[Buiseness Address <font color=\'#cc0029\'>*</font>]]></string>
+    <string name="email_new">Email<font fgcolor="red">*</font></string>
+    <string name="add_token">Add Token</string>
+    <string name="token_qty">Token Quantity</string>
+    <string name="check">Check</string>
+    <string name="token_no">Token Number</string>
+    <string name="token_status">Check Token Status</string>
+    <string name="pan_reg_status">Pan Registration Status</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

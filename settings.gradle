@@ -1,0 +1,4 @@
+include ':microatmlib-release'
+include ':paysprint_matm_v1.0'
+include ':app'
+rootProject.name = "ViteFinetech"

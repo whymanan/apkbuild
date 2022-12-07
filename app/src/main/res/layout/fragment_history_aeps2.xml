@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:background="@color/appBackground"
+    tools:context=".Aeps2.Aeps2New.HistoryAeps2Fragment"
+   >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="9"
+        android:id="@+id/aepsHisRecy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/aeps_history_list"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPre"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="previous"
+            android:fontFamily="@font/nexa_light"
+            android:textStyle="bold"
+            android:textColor="@color/appBackground"
+            android:background="@color/appSecondaryVariantColor"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:fontFamily="@font/nexa_light"
+            android:textStyle="bold"
+            android:textColor="@color/appBackground"
+            android:background="@color/appSecondaryVariantColor"/>
+    </LinearLayout>
+
+
+</LinearLayout>

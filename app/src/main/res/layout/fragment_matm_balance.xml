@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appBackground"
+    tools:context=".M_ATM.MatmBalanceFragment">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="Mobile number:"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nexa_bold"
+        android:textColor="@color/appPrimaryColor"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/et_mob"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/spinner_background"
+        android:digits="1234567890"
+        android:hint="mobile"
+        android:inputType="number"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/appSecondaryVariantColor" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="Device Manufacturer"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nexa_bold"
+        android:textColor="@color/appPrimaryColor"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background">
+
+        <Spinner
+            android:id="@+id/smanu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:dropDownVerticalOffset="60dp"
+            android:paddingLeft="5dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="@drawable/spinner_background"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:text="Check Balance:"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nexa_bold"
+            android:textColor="@color/appPrimaryColor"
+            android:textSize="20sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_info_bal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="5dp"
+            app:cardBackgroundColor="@color/grey2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current Balance:"
+                    android:fontFamily="@font/nexa_light"
+                    android:textStyle="bold"
+                    android:textColor="@color/appPrimaryVariantColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_bal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="cBal"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/appPrimaryVariantColor"
+                    android:textSize="18sp"
+                    />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+
+            android:id="@+id/btnbal"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/appPrimaryColor"
+            android:textColor="@color/white"
+            android:text="Check Balance"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

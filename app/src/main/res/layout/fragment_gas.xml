@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GAS.newGas.GasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".GAS.GasBillPayActivity">
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/backbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_backbutton"/>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView9"
+            android:text="GAS Bill Pay"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nexa_bold"
+            android:textColor="@color/appPrimaryColor"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Provider"
+            android:textSize="14sp"
+            android:fontFamily="@font/nexa_light"
+            android:textStyle="bold"
+            android:textColor="@color/appPrimaryColor"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background">
+
+            <Spinner
+                android:id="@+id/GAS_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:dropDownVerticalOffset="60dp"
+                android:paddingLeft="5dp"
+                android:paddingEnd="20dp"
+                android:paddingRight="20dp"
+                android:spinnerMode="dropdown"
+                android:fontFamily="@font/nexa_light"
+                android:textStyle="bold"
+                android:textColor="@color/appPrimaryColor"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer No/Account No"
+            android:textSize="14sp"
+            android:fontFamily="@font/nexa_light"
+            android:textStyle="bold"
+            android:textColor="@color/appPrimaryColor"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/GAS_accountid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:paddingLeft="12dp"
+            android:ems="10"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/nexa_light"
+            android:textStyle="bold"
+            android:textColor="@color/appPrimaryColor"
+            android:hint="Enter Account No"
+            android:background="@drawable/spinner_background"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_cusInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Customer Information:"
+            android:fontFamily="@font/nexa_light"
+            android:textStyle="bold"
+            android:textColor="@color/appPrimaryColor"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/grey2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:fontFamily="@font/nexa_light"
+                    android:textStyle="bold"
+                    android:textColor="@color/appPrimaryVariantColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_cName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Name"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/appPrimaryVariantColor"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Cell number:"
+                    android:fontFamily="@font/nexa_light"
+                    android:textStyle="bold"
+                    android:textColor="@color/appPrimaryVariantColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_cCell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="cell no"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/appPrimaryVariantColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bill amount:"
+                    android:fontFamily="@font/nexa_light"
+                    android:textStyle="bold"
+                    android:textColor="@color/appPrimaryVariantColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_cBillAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="bill"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/appPrimaryVariantColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Net bill amount:"
+                    android:fontFamily="@font/nexa_light"
+                    android:textStyle="bold"
+                    android:textColor="@color/appPrimaryVariantColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_cNetBillAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="net bill"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/appPrimaryVariantColor"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Net bill amount:"
+                    android:fontFamily="@font/nexa_light"
+                    android:textStyle="bold"
+                    android:textColor="@color/appPrimaryVariantColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_cDue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="00-00-00"
+                    android:fontFamily="@font/nexa_bold"
+                    android:textColor="@color/appPrimaryVariantColor"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_noInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/grey2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/infoErrorMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="*Enter a valid Service provider and account number"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fetchinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/appPrimaryColor"
+            android:text="Fetch  detail"
+            android:fontFamily="@font/nexa_bold"
+            android:textColor="@color/appBackground" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/appPrimaryColor"
+            android:text="Proceed"
+            android:textColor="@color/appBackground"
+            android:fontFamily="@font/nexa_bold"/>
+
+    </LinearLayout>
+
+</ScrollView>

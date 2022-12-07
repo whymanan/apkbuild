@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    tools:context=".MyProfileScreen.changePwdActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="CHANGE  PASSWORD"
+        android:fontFamily="@font/nexa_bold"
+        android:textSize="26sp"
+        android:textColor="@color/appPrimaryColor"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Old Password:"
+        android:fontFamily="@font/nexa_bold"
+        android:textColor="@color/appPrimaryVariantColor"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/oldpwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"
+        android:ems="10"
+        android:hint="Old password"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/appSecondaryVariantColor"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="New Password:"
+        android:fontFamily="@font/nexa_bold"
+        android:textColor="@color/appPrimaryVariantColor"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/newpwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"
+        android:ems="10"
+        android:hint="New password"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/appSecondaryVariantColor"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btn_chpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/appPrimaryColor"
+        android:fontFamily="@font/nexa_light"
+        android:gravity="center"
+        android:text="Change Password"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

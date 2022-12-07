@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="150sp"
+                android:layout_width="150sp"
+                app:cardBackgroundColor="@color/appPrimaryColor"
+                app:cardElevation="10dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay5.MaterialCardView.Cut"
+                android:foreground="?attr/selectableItemBackground"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_width="300sp"
+                app:cardBackgroundColor="@color/black"
+                android:layout_marginBottom="60sp"
+                app:cardElevation="10dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay6.MaterialCardView.Cut"
+                android:foreground="?attr/selectableItemBackground"/>
+
+        </RelativeLayout>
+
+</LinearLayout>

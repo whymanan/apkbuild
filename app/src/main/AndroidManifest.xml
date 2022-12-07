@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vitefinetechapp.vitefinetech">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:remove="android:maxSdkVersion" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_nextmoney"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_nextmoney"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ViteFinetech"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".M_ATM.MatmReceiptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Municipality.newMunicipality.MunicipalityNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrafficChallan.newTraffic.TrafficNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GAS.newGas.GasNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Insurance.newInsurance.InsuranceNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Water.newWater.WaterNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Electricity.newElectricity.ElectricNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LandLine.newLandline.LandLineNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EMI.newEmi.EmiNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DTH.newDTH.DthNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyProfileScreen.changePwdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DMT.DMTreceiptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Payout.PayoutAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DMT.DMTScreenActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".DMT.AddnewBeneficiaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Recharge.newRecharge.RechargeActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Aeps2.Aeps2New.MainAeps2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Municipality.MunicipalityBillPayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrafficChallan.TrafficActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EMI.EmiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Electricity.Electricity_makePaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GAS.Gas_MakeGasBillPayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DTH.DTH_MakeRechargeActivity"
+            android:exported="false" />
+        <activity android:name=".Aeps2.TransactionHistoryActivity" />
+        <activity android:name=".Aeps2.TransactionActivity" />
+        <activity android:name=".Aeps.TransactionReceiptAeps1" />
+        <activity android:name=".Aeps.SubmitAepsTransaction" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".OTPActivity" />
+        <activity android:name=".GST_Registration.CompanyRegistrationActivity" />
+        <activity android:name=".GST_Registration.GSTActivity" />
+        <activity android:name=".GST_Registration.GSTRegistrationActivity" />
+        <activity android:name=".GST_Registration.GSTReturnActivity" />
+        <activity android:name=".GST_Registration.SendFileActivity" />
+        <activity android:name=".GST_Return.GST_ReturnActivity" />
+        <activity android:name=".Pan.AddTokenActivity" />
+        <activity android:name=".Pan.AddVLEActivity" />
+        <activity android:name=".Pan.PanActivity" />
+        <activity android:name=".Coupon.CouponPurchaseActivity" />
+        <activity android:name=".wallet.RequestBalanceActivity" />
+        <activity android:name=".Aeps2.TransactionReceiptAeps2" />
+        <activity android:name=".Aeps2.SubmitAeps2Transaction" />
+        <activity android:name=".Recharge.RechargeActivity" />
+        <activity android:name=".DMT.BenefiaciaryListActivity" />
+        <activity android:name=".Aeps3.BioMetricActivity3" />
+        <activity android:name=".Aeps3.AddNewAdharPayment3" />
+        <activity android:name=".Aeps3.SelectBankActivity3" />
+        <activity android:name=".Aeps2.ScanActivity2" />
+        <activity android:name=".Aeps2.BioMetricActivity2" />
+        <activity android:name=".Aeps2.AddNewAdharPayment2" />
+        <activity android:name=".Aeps2.SelectBankActivity2" />
+        <activity android:name=".M_ATM.M_Atm3" />
+        <activity android:name=".M_ATM.M_Atm2" />
+        <activity android:name=".M_ATM.M_Atm1" />
+        <activity android:name=".Payout.PayOutActivity" />
+        <activity android:name=".Water.WaterActivity" />
+        <activity android:name=".Recharge.MakeRechargeActivity" />
+        <activity android:name=".Insurance.InsuranceActivity" />
+        <activity android:name=".FASTag.FastTagActivity" />
+        <activity android:name=".Recharge.TopUPActivity" />
+        <activity android:name=".DTH.DTH_PlanActivity" />
+        <activity android:name=".KYCDetails.KYCDetailsActivity" />
+        <activity android:name=".KYCDetails.KYCManagementActivity" />
+        <activity android:name=".Aeps.ScanActivity" />
+        <activity android:name=".MyProfileScreen.MyProfileActivity" />
+        <activity android:name=".DMT.AddNewDmtActivity" />
+        <activity android:name=".DMT.DMTScreenActivity" />
+        <activity android:name=".Aeps.BioMetricActivity" />
+        <activity android:name=".Aeps.BankActivity2" />
+        <activity android:name=".Aeps.BankActivity" />
+        <activity android:name=".DATA_Card.DataCardRechargeActivity" />
+        <activity android:name=".DTH.DthRechargActivity" />
+        <activity android:name=".LandLine.LandlineBillActivity" />
+        <activity android:name=".Electricity.ElecticityActivity" />
+        <activity android:name=".GAS.GasBillPayActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

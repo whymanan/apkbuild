@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".DATA_Card.DataCardRechargeActivity">
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_backbutton"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView9"
+        android:text="Data Card Recharge"
+        android:layout_marginTop="20dp"
+        android:textColor = "@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DTH Number"
+        android:textSize="14sp"
+        android:textColor = "@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/dthno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:paddingLeft="12dp"
+        android:ems="10"
+        android:textColor = "@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Enter Number"
+        android:background="@drawable/spinner_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service Provider"
+        android:textSize="14sp"
+        android:textColor = "@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background">
+
+        <Spinner
+            android:id="@+id/Data_Card_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            android:paddingLeft="5dp"
+            android:paddingEnd="20dp"
+            android:dropDownVerticalOffset="60dp"
+            android:paddingRight="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="14sp"
+        android:textColor = "@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/GAS_accountid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:paddingLeft="12dp"
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:textColor = "@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/spinner_background"/>
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/appPrimaryColor"
+        android:text="Save"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

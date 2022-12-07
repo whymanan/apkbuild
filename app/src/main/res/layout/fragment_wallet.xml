@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DashboardActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/themesss"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_two_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txt_wallet_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Wallet"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_av_bal_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Available Balance"
+            android:textColor="@color/white"
+            android:layout_below="@+id/txt_wallet_lable"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txt_avail_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:layout_below="@+id/txt_av_bal_label"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txt_req_bal_lble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="end"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_wallet_lable"
+            android:text="Requested Balance"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/txt_req_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/txt_req_bal_lble"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/txt_withdrawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textColor="@color/white"
+            android:layout_below="@+id/txt_avail_bal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/withdraw"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txt_add_req_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/txt_req_bal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/add_balance"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_l"
+        android:layout_marginTop="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_one_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="240dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="#fcfcfc"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_get_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/getHistory"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/linear_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_get_history">
+
+                        <TextView
+                            android:id="@+id/txt_from_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="10sp"
+                            android:text="From Date"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+
+                        <TextView
+                            android:id="@+id/txt_to_date"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="To Date"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/txt_get_history"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="20dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear_txt">
+
+                        <EditText
+                            android:id="@+id/edt_from_date_id"
+                            android:layout_width="0dp"
+                            android:textSize="17sp"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"/>
+
+                        <EditText
+                            android:id="@+id/edt_to_date_id"
+                            android:layout_width="0dp"
+                            android:textSize="17sp"
+                            android:focusable="false"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linear_l"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/go"
+        android:textColor="@color/white"
+        android:background="@color/appPrimaryColor"
+        android:elevation="15dp"/>
+
+    <!--    <androidx.core.widget.NestedScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_below="@+id/btn_go">-->
+
+    <!--        <ir.androidexception.datatable.DataTable-->
+    <!--            android:id="@+id/dt"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            app:header_gravity="center"-->
+    <!--            app:row_gravity="center"-->
+    <!--            app:header_vertical_padding="16dp"-->
+    <!--            app:header_horizontal_padding="0dp"-->
+    <!--            app:row_vertical_padding="16dp"-->
+    <!--            app:header_text_size="10sp"-->
+    <!--            app:row_text_size="10sp"-->
+    <!--            app:row_text_color="#000"-->
+    <!--            app:header_text_color="#000"-->
+    <!--            app:row_background_color="#fff"-->
+    <!--            app:header_background_color="#fff"-->
+    <!--            app:persian_number="false"-->
+    <!--            app:corner_radius="8dp"-->
+    <!--            android:layout_below="@+id/btn_go"-->
+    <!--            app:direction="ltr"-->
+    <!--            android:scrollbars="vertical|horizontal"-->
+
+    <!--            app:shadow="8dp"/>-->
+    <!--    </androidx.core.widget.NestedScrollView>-->
+
+    <ProgressBar
+        android:id="@+id/loadingL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_go"
+        android:layout_marginTop="20dp"
+        android:maxHeight="50dp"
+        android:minWidth="50dp"
+        android:progress="50"
+        android:max="100"
+        style="?android:attr/progressBarStyle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_walllet_ledger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadingL" />
+
+</RelativeLayout>
+</ScrollView>
+
+
+

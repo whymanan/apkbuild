@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/appBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".M_ATM.MatmWithdrawFragment">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="Mobile number:"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nexa_bold"
+        android:textColor="@color/appPrimaryColor"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/et_mob"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/spinner_background"
+        android:digits="1234567890"
+        android:hint="mobile"
+        android:inputType="number"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/appSecondaryVariantColor" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="Device Manufacturer"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nexa_bold"
+        android:textColor="@color/appPrimaryColor"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background">
+
+        <Spinner
+            android:id="@+id/smanu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:dropDownVerticalOffset="60dp"
+            android:paddingLeft="5dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="@drawable/spinner_background"
+        >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:text="Cash Withdraw:"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nexa_bold"
+            android:textColor="@color/appPrimaryColor"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/spinner_background"
+            android:digits="1234567890"
+            android:hint="Amount"
+            android:inputType="number"
+            android:paddingLeft="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/appSecondaryVariantColor" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:background="@color/appPrimaryColor"
+            android:text="cash Withdraw"
+            android:textColor="@color/white" />
+        <!--            <EditText-->
+        <!--                android:id="@+id/editTextRemark"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_below="@+id/editTextAmount"-->
+        <!--                android:layout_marginTop="20dp"-->
+        <!--                android:background="@drawable/spinner_background"-->
+        <!--                android:hint="@string/remark"-->
+        <!--                android:paddingLeft="12dp"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/black" />-->
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_response"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/spinner_background"
+        android:digits="1234567890"
+        android:hint="response"
+        android:inputType="number"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/appSecondaryVariantColor" />
+
+</LinearLayout>

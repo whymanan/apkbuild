@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".OTPActivity">
+
+    <TextView
+        android:id="@+id/txt_otp_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Enter OTP"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/linear_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txt_otp_title">
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/firstPinView"
+            style="@style/PinWidget.PinView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:layout_marginStart="10dp"
+            android:hint="Hint."
+            android:inputType="number"
+            android:paddingStart="4dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/blue"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="4dp"
+            app:itemWidth="48dp"
+            app:lineColor="@color/black"
+            app:lineWidth="2dp"
+            app:viewType="rectangle"
+            android:layout_weight=".80"/>
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_weight=".20"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_resend_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_otp">
+
+
+        <Button
+            android:id="@+id/btn_resent_otp"
+            android:hint="Resend OTP"
+            android:textColorHint="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="8dp"
+            android:layout_weight=".80" />
+
+
+
+        <TextView
+            android:id="@+id/txt_sec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="30 Sec"
+            android:layout_weight=".20" />
+
+    </LinearLayout>
+
+</RelativeLayout>

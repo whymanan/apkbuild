@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="100dp"
+    android:background="@color/appBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/login_circle_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="10sp"
+        android:src="@drawable/home_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/your_blnc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical"
+        android:id="@+id/guideline"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_end="20dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintGuide_begin="5dp"
+        android:orientation="vertical"
+        android:id="@+id/guideline3"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/guideline4"
+        app:layout_constraintGuide_end="5dp"/>
+
+
+    <!--    <include-->
+    <!--        android:id="@+id/your_blnc"-->
+    <!--        layout="@layout/your_blnc_layout"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10sp" />-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/your_blnc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/SliderDots">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include
+                layout="@layout/your_blnc_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/background_rounded"
+        app:layout_constraintDimensionRatio="4:2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/your_blnc" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        android:text="UserID"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textColor="@color/white"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        android:text=""
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:textStyle="bold" android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="8dp"
+        android:letterSpacing=".3"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:visibility="gone"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        android:text="Copy"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textColor="@color/white"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:iconTint="@color/white"
+        app:iconSize="16dp"
+        app:iconPadding="4dp"
+        app:icon="@drawable/ic_copy"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:padding="0dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:gravity="start" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/welcomeBack_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nexa_light"
+        android:textStyle="bold"
+        android:textColor="@color/appBackground"
+        android:layout_marginTop="20dp"
+        android:text="Welcome back,"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_mastercard"
+        android:layout_marginRight="8dp" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="3sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintDimensionRatio="4:2"
+        app:layout_constraintEnd_toStartOf="@id/guideline4"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeBack_tv" />
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_below="@+id/viewPager"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf = "@id/guideline3"
+        app:layout_constraintEnd_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view_bank_service"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline4"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexa_bold"
+                android:text="Banking Services"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <include
+                android:id="@+id/bankingview"
+                layout="@layout/banking_partial_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view_racharge_service"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:contentPadding="10sp"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_bank_service"
+        android:foreground="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/textView11"
+                android:text="Recharge And BBPS"
+                android:fontFamily="@font/nexa_bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <include
+                android:id="@+id/rechargeAndBbbsview"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                layout="@layout/recharge_bbps_partial_action"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view_legal_service"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:contentPadding="10sp"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_racharge_service"
+        android:foreground="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/textView12"
+                android:text="Coming Soon"
+                android:fontFamily="@font/nexa_bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <include
+                android:id="@+id/legalservices"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                layout="@layout/legal_service_partial_action"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!--    <TextView-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:id="@+id/textView10"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline"-->
+    <!--        android:text="Last Activity"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/card_view_legal_service"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="20sp"/>-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline2"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView10"-->
+    <!--        app:cardElevation="4dp">-->
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            tools:listitem="@layout/item_activity"-->
+    <!--            android:layout_margin="16dp"/>-->
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

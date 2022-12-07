@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/appBackground"
+    tools:context=".Electricity.Electricity_makePaymentActivity">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/crd_id"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10dp"
+        android:background="@drawable/shadow"
+        android:layout_margin="20sp"
+        app:cardCornerRadius="8dp"
+        android:foreground="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_fail"
+                android:background="@drawable/background_oval11"
+                android:layout_gravity="center"
+                android:id="@+id/imageButtonAe"/>
+
+            <TextView
+                android:id="@+id/sucessful_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recharge Successful"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center|center_vertical"
+                android:textColor="@color/appPrimaryColor"
+                android:fontFamily="@font/nexa_bold"
+                android:textSize="20dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nexa_bold"
+            android:gravity="center_vertical"
+            android:text="DETAILS:"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            app:autoSizeTextType="uniform"
+            android:textColor="@color/appPrimaryVariantColor"
+            app:layout_constraintBottom_toTopOf="@+id/guideline12"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/guideline11" />
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:backgroundTint="@color/white"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="4dp">
+
+                    <TextView
+                        android:textColor="@color/appPrimaryVariantColor"
+                        android:id="@+id/tv_mobNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="start|center_vertical"
+                        android:text="Account:" />
+
+                    <TextView
+                        android:textColor="@color/appPrimaryColor"
+                        android:id="@+id/tv_acc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="center_vertical|end"
+                        android:text="8888888888" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="4dp">
+
+                    <TextView
+                        android:textColor="@color/appPrimaryVariantColor"
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="start|center_vertical"
+                        android:text="Amount:" />
+
+                    <TextView
+                        android:textColor="@color/appPrimaryColor"
+                        android:id="@+id/tv_amt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="center_vertical|end"
+                        android:text="8888888888" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="4dp">
+
+                    <TextView
+                        android:textColor="@color/appPrimaryVariantColor"
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="start|center_vertical"
+                        android:text="Operator:" />
+
+                    <TextView
+                        android:textColor="@color/appPrimaryColor"
+                        android:id="@+id/tv_op"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="center_vertical|end"
+                        android:text="8888888888" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="4dp">
+
+                    <TextView
+                        android:textColor="@color/appPrimaryVariantColor"
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="start|center_vertical"
+                        android:text="Retailer name:" />
+
+                    <TextView
+                        android:textColor="@color/appPrimaryColor"
+                        android:id="@+id/tvRname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="center_vertical|end"
+                        android:text="8888888888" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="4dp">
+
+                    <TextView
+                        android:textColor="@color/appPrimaryVariantColor"
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="start|center_vertical"
+                        android:text="Retailer Id:" />
+
+                    <TextView
+                        android:textColor="@color/appPrimaryColor"
+                        android:id="@+id/tvRid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="center_vertical|end"
+                        android:text="8888888888" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
