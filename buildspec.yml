@@ -3,10 +3,14 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/mainapk/
-hooks:
-  BeforeInstall:
-    - location: apk.sh
-      timeout: 200
+Phase:
+  Install:
+    commands:
+      - cd /home/ubuntu/mainapk/
+      - chmod u+x apk.sh
+  Build:
+    commands:
+      - ./apk.sh
 artifacts:
   files:
     - '**/*'      
