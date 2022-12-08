@@ -7,4 +7,9 @@ hooks:
   BeforeInstall:
     - location: apk.sh
       timeout: 200
+artifacts:
+  files:
+    - '**/*'      
+
+      
     
