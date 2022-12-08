@@ -7,6 +7,4 @@ hooks:
   BeforeInstall:
     - location: apk.sh
       timeout: 200
-artifacts:
-  files:
-    - app/build/outputs/apk/app-debug.apk      
+    
