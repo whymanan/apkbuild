@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/mainapk/
+hooks:
+  BeforeInstall:
+    - location: apk.sh
+      timeout: 200
