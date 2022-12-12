@@ -28,6 +28,7 @@ Phases:
     - open $FHOSTNAME
     - user $FUSER $FPASS
     - passive
+    - put DemoDB.sql
     - put mainfile.tar.gz
     - close
     - bye
