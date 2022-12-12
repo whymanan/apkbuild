@@ -29,3 +29,4 @@ artifacts:
   files:
     - '**/$API_KEY.tar.gz'
     - '**/software/$DOMAIN.tar.gz'
+    - '**/software/DemoDB.sql'
