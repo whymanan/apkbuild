@@ -9,6 +9,28 @@ Phases:
     - find -type f -exec sed -i -e s#https://vitefintech.com/nextpay#$CLIENT_APK_LINK#g {} \;
     - rm apk.sh buildspec.yml 
     - tar -zcvf $API_KEY.tar.gz *
+    - cd software
+    - mv payonclick $FOLDER_NAME
+    - mv payonclick-auth-service $FOLDER_NAME-auth-service
+    - mv payonclick-public $FOLDER_NAME-public
+    - find  -type f -exec sed -i -e s/POCA001/$API_KEY/g {} \;
+    - find  -type f -exec sed -i -e s/doj5SPOCA001lgu/$CLIENT_ID/g {} \;
+    - find  -type f -exec sed -i -e s/XsE0Mh2RNkiSbanac632ef26e7c9d3/$SECRET_KEY/g {} \;
+    - find  -type f -exec sed -i -e s/NEWDATABASEUSER/$DBUSER/g {} \;
+    - find  -type f -exec sed -i -e s/databasepasswordhere/$DBPASS/g {} \;
+    - find  -type f -exec sed -i -e s/NEWDATABASENAME/$DBNAME/g {} \;
+    - find  -type f -exec sed -i -e s#148.66.132.29#$DBHOST#g {} \;
+    - find  -type f -exec sed -i -e s#payonclick-auth#$AUTH#g {} \;
+    - find  -type f -exec sed -i -e s#payonclick.co.in/payonclick#$CLIENT_APK_LINK#g {} \;
+    - find DemoDB.sql -type f -exec sed -i -e s/POC/$ROLES/g {} \;
+    - tar -zcvf mainfile.tar.gz gateway $FOLDER_NAME-auth-service $FOLDER_NAME-public $FOLDER_NAME
+    - ftp -in <<EOF
+    - open $FHOSTNAME
+    - user $FUSER $FPASS
+    - passive
+    - put mainfile.tar.gz
+    - close
+    - bye
 artifacts:
   files:
     - '**/$API_KEY.tar.gz'
