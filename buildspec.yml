@@ -2,17 +2,13 @@ version: 0.2
 Phases:
   install:
     commands:
-    - cd .. 
-    - mkdir -p $DOMAIN
-    - cp -r mainapk/* $DOMAIN
-    - find $DOMAIN/ -type f -exec sed -i -e s/NMA001/$API_KEY/g {} \;
-    - find $DOMAIN/ -type f -exec sed -i -e s/3BY1VNMA001fwpD/$CLIENT_ID/g {} \;
-    - find $DOMAIN/ -type f -exec sed -i -e s/nxuuMLYGMb92VWI3R62ff9e7f3916a/$SECRET_KEY/g {} \;
-    - find $DOMAIN/ -type f -exec sed -i -e s#https://nextmoney.co.in/nextmoney#$CLIENT_APK_LINK#g {} \;
-    - find $DOMAIN/ -type f -exec sed -i -e s#https://vitefintech.com/nextpay#$CLIENT_APK_LINK#g {} \;
-    - cd $DOMAIN/
+    - find -type f -exec sed -i -e s/NMA001/$API_KEY/g {} \;
+    - find -type f -exec sed -i -e s/3BY1VNMA001fwpD/$CLIENT_ID/g {} \;
+    - find -type f -exec sed -i -e s/nxuuMLYGMb92VWI3R62ff9e7f3916a/$SECRET_KEY/g {} \;
+    - find -type f -exec sed -i -e s#https://nextmoney.co.in/nextmoney#$CLIENT_APK_LINK#g {} \;
+    - find -type f -exec sed -i -e s#https://vitefintech.com/nextpay#$CLIENT_APK_LINK#g {} \;
     - rm apk.sh buildspec.yml 
     - tar -zcvf $API_KEY.tar.gz *
 artifacts:
   files:
-    - '$DOMAIN/$API_KEY.tar.gz'
+    - '**/*'
