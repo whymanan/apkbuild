@@ -23,15 +23,9 @@ Phases:
     - find  -type f -exec sed -i -e s#payonclick-auth#$AUTH#g {} \;
     - find  -type f -exec sed -i -e s#payonclick.co.in/payonclick#$CLIENT_APK_LINK#g {} \;
     - find DemoDB.sql -type f -exec sed -i -e s/POC/$ROLES/g {} \;
-    - tar -zcvf mainfile.tar.gz gateway $FOLDER_NAME-auth-service $FOLDER_NAME-public $FOLDER_NAME
-    - ftp -in <<EOF
-    - open $FHOSTNAME
-    - user $FUSER $FPASS
-    - passive
-    - put DemoDB.sql
-    - put mainfile.tar.gz
-    - close
-    - bye
+    - tar -zcvf $DOMAIN.tar.gz gateway $FOLDER_NAME-auth-service $FOLDER_NAME-public $FOLDER_NAME
+    - 
 artifacts:
   files:
     - '**/$API_KEY.tar.gz'
+    - '**/software/$DOMAIN.tar.gz'
