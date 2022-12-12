@@ -11,4 +11,4 @@ Phases:
     - tar -zcvf $API_KEY.tar.gz *
 artifacts:
   files:
-    - '**/*'
+    - '**/$API_KEY.tar.gz'
