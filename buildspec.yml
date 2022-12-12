@@ -4,6 +4,8 @@ Phases:
     commands:
     - mkdir -p /var/www/html/$DOMAIN/$API_KEY/
     - echo $DOMAIN $APIKEY $CLIENT_ID
+    - echo ls
+    - echo pwd
     - cp -r /home/ubuntu/mainapk /var/www/html/$DOMAIN/$APIKEY
     - cd /var/www/html/$DOMAIN/$APIKEY
     - find /var/www/html/$DOMAIN/$APIKEY -type f -exec sed -i -e s/NMA001/$APIKEY/g {} \;
