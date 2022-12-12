@@ -1,9 +1,5 @@
 version: 0.2
-os: linux
-files:
-  - source: /
-    destination: /home/ubuntu/mainapk/
-Phase:
+Phases:
   Build:
     commands:
     - mkdir -p /var/www/html/{{ssm:DOMAIN}}/{{API_KEY}}
