@@ -1,6 +1,6 @@
 version: 0.2
 Phases:
-  Build:
+  install:
     commands:
     - mkdir -p /var/www/html/{{ssm:DOMAIN}}/{{API_KEY}}
     - cp -r /home/ubuntu/mainapk /var/www/html/{{ssm:DOMAIN}}/{{ssm:API_KEY}}
