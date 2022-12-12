@@ -3,7 +3,7 @@ Phases:
   install:
     commands:
     - mkdir -p $DOMAIN/$API_KEY
-    - cd /$DOMAIN/$API_KEY
+    - cd $DOMAIN/$API_KEY
     - find /$DOMAIN/$API_KEY -type f -exec sed -i -e s/NMA001/$API_KEY/g {} \;
     - find /$DOMAIN/$API_KEY -type f -exec sed -i -e s/3BY1VNMA001fwpD/$CLIENT_ID/g {} \;
     - find /$DOMAIN/$API_KEY -type f -exec sed -i -e s/nxuuMLYGMb92VWI3R62ff9e7f3916a/$SECRET_KEY/g {} \;
