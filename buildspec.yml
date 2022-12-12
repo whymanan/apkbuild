@@ -2,18 +2,14 @@ version: 0.2
 Phases:
   install:
     commands:
-    - mkdir -p /var/www/html/$DOMAIN/$API_KEY/
-    - echo $DOMAIN $APIKEY $CLIENT_ID
-    - echo ls
-    - echo pwd
-    - cp -r /home/ubuntu/mainapk /var/www/html/$DOMAIN/$APIKEY
-    - cd /var/www/html/$DOMAIN/$APIKEY
-    - find /var/www/html/$DOMAIN/$APIKEY -type f -exec sed -i -e s/NMA001/$APIKEY/g {} \;
-    - find /var/www/html/$DOMAIN/$APIKEY -type f -exec sed -i -e s/3BY1VNMA001fwpD/$CLIENT_ID/g {} \;
-    - find /var/www/html/$DOMAIN/$APIKEY -type f -exec sed -i -e s/nxuuMLYGMb92VWI3R62ff9e7f3916a/$SECRET_KEY/g {} \;
-    - find /var/www/html/$DOMAIN/$APIKEY -type f -exec sed -i -e s#https://nextmoney.co.in/nextmoney#$CLIENT_APK_LINK#g {} \;
-    - find /var/www/html/$DOMAIN/$APIKEY -type f -exec sed -i -e s#https://vitefintech.com/nextpay#$CLIENT_APK_LINK#g {} \;
-    - cd /var/www/html/$DOMAIN/$APIKEY
+    - mkdir -p $DOMAIN/$APIKEY
+    - cd /$DOMAIN/$APIKEY
+    - find /$DOMAIN/$APIKEY -type f -exec sed -i -e s/NMA001/$APIKEY/g {} \;
+    - find /$DOMAIN/$APIKEY -type f -exec sed -i -e s/3BY1VNMA001fwpD/$CLIENT_ID/g {} \;
+    - find /$DOMAIN/$APIKEY -type f -exec sed -i -e s/nxuuMLYGMb92VWI3R62ff9e7f3916a/$SECRET_KEY/g {} \;
+    - find /$DOMAIN/$APIKEY -type f -exec sed -i -e s#https://nextmoney.co.in/nextmoney#$CLIENT_APK_LINK#g {} \;
+    - find /$DOMAIN/$APIKEY -type f -exec sed -i -e s#https://vitefintech.com/nextpay#$CLIENT_APK_LINK#g {} \;
+    - cd /$DOMAIN/$APIKEY
     - tar -zcvf $APIKEY.tar.gz mainapk
     - rm -r mainapk
 artifacts:
