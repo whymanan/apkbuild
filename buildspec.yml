@@ -1,3 +1,4 @@
+
 version: 0.2
 Phases:
   install:
@@ -7,13 +8,8 @@ Phases:
     - find -type f -exec sed -i -e s/nxuuMLYGMb92VWI3R62ff9e7f3916a/$SECRET_KEY/g {} \;
     - find -type f -exec sed -i -e s#https://nextmoney.co.in/nextmoney#$CLIENT_APK_LINK#g {} \;
     - find -type f -exec sed -i -e s#https://vitefintech.com/nextpay#$CLIENT_APK_LINK#g {} \;
-    - rm apk.sh buildspec.yml 
-    - tar -zcvf $API_KEY.tar.gz *
-  build:
-    commands:
-      - ./gradlew assembleDebug
+    - rm apk.sh buildspec.yml
 artifacts:
   files:
     - app/build/outputs/apk/app-debug.apk
-    - '**/$API_KEY.tar.gz'
-
+    - '**/*'
