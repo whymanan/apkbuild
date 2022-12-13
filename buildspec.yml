@@ -11,5 +11,4 @@ Phases:
     - rm buildspec.yml
 artifacts:
   files:
-    - app/build/outputs/apk/app-debug.apk
     - '**/*'
